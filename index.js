@@ -77,7 +77,6 @@ mongoClient.connect(mongoUrl).then(db => {
 }).catch(err => {
 
     // catch errors and close db
-
     console.error(err);
     users.collection.close();
 
