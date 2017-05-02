@@ -78,6 +78,6 @@ mongoClient.connect(mongoUrl).then(db => {
 
     // catch errors and close db
     console.error(err);
-    users.collection.close();
+    users.db.close();
 
 })
